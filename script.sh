@@ -36,6 +36,9 @@ mv "${NEWNAME}UITests/${OLDNAME}UITests.m" "${NEWNAME}UITests/${NEWNAME}UITests.
 mv "${OLDNAME}.xcodeproj" "${NEWNAME}.xcodeproj"
 
 # Rename the shared scheme
+mv "${NEWNAME}.xcodeproj/xcshareddata/xcschemes/${OLDNAME}.xcscheme" "${NEWNAME}.xcodeproj/xcshareddata/xcschemes/${NEWNAME}.xcscheme"
+
+# Rename the shared scheme for swift
 mv "${NEWNAME}.xcodeproj/xcuserdata/iosdev.xcuserdatad/xcschemes/${OLDNAME}.xcscheme" "${NEWNAME}.xcodeproj/xcuserdata/iosdev.xcuserdatad/xcschemes/${NEWNAME}.xcscheme"
 
 # Rename the 'OLDNAME-Bridging-Header' file for swift
